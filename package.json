@@ -42,7 +42,7 @@
     "type": "git",
     "url": "https://github.com/B-EtterDigital/Cynaps3-OpenClaw-Plugin"
   },
-  "homepage": "https://cynaps3.io",
+  "homepage": "https://cynaps3.7cycle.life",
   "devDependencies": {
     "typescript": "^5.9.0",
     "vitest": "^3.0.0",

@@ -61,7 +61,7 @@ We're offering **limited lifetime deals** for early adopters during our launch p
 
 Early supporters get lifetime access to Musicmation, Comicmation, Storymation, Skillmation, and Contentmation as they ship. No recurring fees. No upgrade costs. Ever.
 
-Visit [cynaps3.io](https://cynaps3.io) to claim yours while they last.
+Visit [cynaps3.7cycle.life](https://cynaps3.7cycle.life) to claim yours while they last.
 
 ---
 
@@ -310,7 +310,8 @@ test/
 
 ## Links
 
-- **Homepage**: [cynaps3.io](https://cynaps3.io)
+- **Homepage**: [cynaps3.7cycle.life](https://cynaps3.7cycle.life)
+- **Better Digital**: [b-etter.digital](https://b-etter.digital)
 - **Repository**: [github.com/B-EtterDigital/Cynaps3-OpenClaw-Plugin](https://github.com/B-EtterDigital/Cynaps3-OpenClaw-Plugin)
 - **Issues**: [github.com/B-EtterDigital/Cynaps3-OpenClaw-Plugin/issues](https://github.com/B-EtterDigital/Cynaps3-OpenClaw-Plugin/issues)
 - **npm**: [@cynaps3/openclaw-plugin](https://www.npmjs.com/package/@cynaps3/openclaw-plugin)
