@@ -5,9 +5,7 @@
 [![tests](https://img.shields.io/badge/tests-240%20passed-brightgreen)]()
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-blue)]()
 
-**AI-powered music creation and library management for OpenClaw.**
-
-Generate tracks with Suno and Sonauto, browse 150+ artist styles, manage projects and albums, rate and curate your library — all through natural language via typed agent tools.
+### Augment your OpenClaw Agent with amazing Creative Cynaps3s — Crafted by Creatives for you!
 
 ```bash
 openclaw plugins install @cynaps3/openclaw-plugin
@@ -15,22 +13,57 @@ openclaw plugins install @cynaps3/openclaw-plugin
 
 ---
 
-## What It Does
+## What Your Agent Can Do
 
-Cynaps3 turns your OpenClaw agent into a music production assistant. Ask it to generate a track, and it will pick a style, write lyrics, enqueue generation, poll for completion, and deliver playable results — all in 3 conversational turns.
+Once installed, your OpenClaw agent becomes a **music production powerhouse**. These aren't toy demos — this is what real users do every day:
 
-**26 tools. 2 bundled skills. Dual-provider generation.**
+### Daily Rituals
 
-### Highlights
+- **"Create my morning meditation"** — Your agent generates a calming ambient track with solfeggio frequencies, saves it to your Meditation project, and has it ready before your coffee is done
+- **"Make me something uplifting for my commute"** — It picks an energetic style, writes lyrics, generates 2 variations, and lets you choose your favorite
+- **"Generate today's focus music"** — Lo-fi, ambient, or classical — your agent knows your preferences and delivers without asking
 
-- **Generate music** via Suno (2 variations) or Sonauto (1 song) — the agent picks the right provider or you choose
-- **Bulk generate** up to 20 tracks in a single batch with `musicmation_bulk_generate`
-- **Browse 150+ artist styles** across 15 categories (hip-hop, electronic, jazz, kpop, classical, etc.)
+### Creative Sessions
+
+- **"Produce a 10-track album about city nights"** — Your agent creates the project, names every track creatively, writes unique lyrics for each, bulk-generates all 10, then organizes them into an album with an energy curve
+- **"Write me a standup comedy set"** — Comedy tracks with punchline timing, crowd reactions, and that open-mic energy *(beta quality — improving fast)*
+- **"Create a synthwave EP in German"** — Multi-language lyrics, genre-specific styles, full album packaging
+- **"Browse jazz styles and make something like Coltrane meets lo-fi"** — 150+ artist styles to blend and explore
+
+### Library Management
+
+- **"Clean up my library"** — Bulk rename tracks with creative titles, sort by mood, move between projects, rate everything 1-10
+- **"Find my best tracks and make an album"** — Search by rating, mood, genre, energy — then package the hits
+- **"Organize last week's generations"** — Your agent remembers what's unrated, unsorted, and unnamed
+
+### Automation (with OpenClaw Heartbeat/Cron)
+
+- **Wake up to fresh music** — Schedule daily generation: meditation at 6am, focus music at 9am, workout beats at 5pm
+- **Weekly album drops** — Auto-generate themed albums every Friday from your highest-rated tracks of the week
+- **Library health checks** — Periodic cleanup: flag unrated tracks, archive stale drafts, surface forgotten gems
+- **Mood-based playlists** — Generate seasonal or time-of-day collections automatically
+
+### What's Coming Next
+
+- **Storymation** — Interactive storytelling with branching narratives, character arcs, world-building, and voice-acted scenes
+- **Skillmation** — Guided learning paths, adaptive exercises, skill trees for music theory and production
+- **Contentmation** — Cross-platform publishing, release scheduling, distribution pipeline
+- **Release tools** — One-click distribution prep, metadata formatting, cover art generation
+
+**26 tools. 2 bundled skills. Dual-provider generation. And this is just the Musicmation module.**
+
+---
+
+## Technical Highlights
+
+- **Dual-provider** — Suno (2 variations) or Sonauto (1 song) — the agent auto-selects or you choose
+- **Bulk generate** up to 20 tracks in a single batch
+- **150+ artist styles** across 15 categories (hip-hop, electronic, jazz, kpop, classical, and more)
 - **AI lyrics** in any language via Suno's lyrics API, or agent-written for Sonauto
 - **Project management** — organize tracks into projects with auto-context mappings
 - **Library curation** — search, rate, recommend, create albums, set energy curves
 - **Autonomy-gated writes** — destructive operations require user confirmation via signed tokens
-- **Zero security enforcement client-side** — all auth, rate limits, tier checks, and ownership scoping enforced server-side in Supabase edge functions
+- **Zero security enforcement client-side** — thin client / fat server, all rules enforced in Supabase edge functions
 
 ---
 
@@ -139,14 +172,14 @@ The agent auto-selects the provider based on available API keys and user prefere
 
 ## Modules
 
-| Module | Status | Description |
-|--------|--------|-------------|
-| **musicmation** | Active (25 tools) | AI music generation, library management, album curation, style browsing, influence groups |
-| **storymation** | Coming soon | Interactive storytelling — branching narratives, character arcs, world-building, voice-acted scenes |
-| **skillmation** | Coming soon | Skill development content — guided learning paths, practice exercises, adaptive difficulty |
-| **contentmation** | Coming soon | Content aggregation and distribution — cross-platform publishing, scheduling, analytics |
+| Module | Status | What it unlocks |
+|--------|--------|-----------------|
+| **musicmation** | Live (25 tools) | Music generation, library management, albums, styles, lyrics, bulk ops |
+| **storymation** | In development | Branching narratives, character arcs, world-building, voice-acted scenes |
+| **skillmation** | In development | Learning paths, practice exercises, adaptive difficulty, skill trees |
+| **contentmation** | In development | Cross-platform publishing, release scheduling, distribution analytics |
 
-Modules register tools only when listed in `enabledModules`. The plugin loads cleanly with no modules enabled (just the `cynaps3_preflight` core tool). Each module ships with its own bundled skill playbook.
+Each module registers its own tools and ships its own skill playbook. Enable only what you need — the plugin loads cleanly with any combination.
 
 ---
 
