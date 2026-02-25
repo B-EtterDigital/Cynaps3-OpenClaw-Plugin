@@ -45,12 +45,23 @@ Once installed, your OpenClaw agent becomes a **music production powerhouse**. T
 
 ### What's Coming Next
 
+- **Comicmation** — AI comic and visual storytelling — panel layouts, character consistency, speech bubbles, full issue generation
 - **Storymation** — Interactive storytelling with branching narratives, character arcs, world-building, and voice-acted scenes
 - **Skillmation** — Guided learning paths, adaptive exercises, skill trees for music theory and production
 - **Contentmation** — Cross-platform publishing, release scheduling, distribution pipeline
 - **Release tools** — One-click distribution prep, metadata formatting, cover art generation
 
 **26 tools. 2 bundled skills. Dual-provider generation. And this is just the Musicmation module.**
+
+---
+
+### Limited Lifetime Deals
+
+We're offering **limited lifetime deals** for early adopters during our launch phase. Lock in permanent access to all current and future Cynaps3 modules at a fraction of the subscription price — before we close the window.
+
+Early supporters get lifetime access to Musicmation, Comicmation, Storymation, Skillmation, and Contentmation as they ship. No recurring fees. No upgrade costs. Ever.
+
+Visit [cynaps3.io](https://cynaps3.io) to claim yours while they last.
 
 ---
 
@@ -175,6 +186,7 @@ The agent auto-selects the provider based on available API keys and user prefere
 | Module | Status | What it unlocks |
 |--------|--------|-----------------|
 | **musicmation** | Live (25 tools) | Music generation, library management, albums, styles, lyrics, bulk ops |
+| **comicmation** | In development | AI comics, panel layouts, character consistency, speech bubbles, full issues |
 | **storymation** | In development | Branching narratives, character arcs, world-building, voice-acted scenes |
 | **skillmation** | In development | Learning paths, practice exercises, adaptive difficulty, skill trees |
 | **contentmation** | In development | Cross-platform publishing, release scheduling, distribution analytics |
