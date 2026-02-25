@@ -275,4 +275,4 @@ test/
 
 ## License
 
-[MIT](./LICENSE) — Better Digital LLC, registered in New Mexico — Made with Passion
+[MIT](./LICENSE) — Better Digital LLC, New Mexico — Made with Passion
