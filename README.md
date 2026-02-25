@@ -1,5 +1,10 @@
 # @cynaps3/openclaw-plugin
 
+[![npm version](https://img.shields.io/npm/v/@cynaps3/openclaw-plugin)](https://www.npmjs.com/package/@cynaps3/openclaw-plugin)
+[![license](https://img.shields.io/npm/l/@cynaps3/openclaw-plugin)](./LICENSE)
+[![tests](https://img.shields.io/badge/tests-240%20passed-brightgreen)]()
+[![TypeScript](https://img.shields.io/badge/TypeScript-strict-blue)]()
+
 **AI-powered music creation and library management for OpenClaw.**
 
 Generate tracks with Suno and Sonauto, browse 150+ artist styles, manage projects and albums, rate and curate your library — all through natural language via typed agent tools.
@@ -32,7 +37,7 @@ Cynaps3 turns your OpenClaw agent into a music production assistant. Ask it to g
 ## Architecture
 
 ```
-Plugin (this package)        --> Typed tools + background services
+Plugin (this package)        --> Typed tools + auto-reply commands
 Bundled Skills (skills/)     --> Agent playbooks (SKILL.md)
 Edge Functions (server-side) --> All security enforcement
 ```
@@ -187,7 +192,7 @@ After installing, configure the plugin in your OpenClaw settings:
 openclaw plugins install @cynaps3/openclaw-plugin
 
 # Or install locally for development
-openclaw plugins install -l ./packages/cynaps3-openclaw-plugin
+openclaw plugins install -l ./
 
 # Verify
 openclaw plugins list
@@ -234,8 +239,6 @@ src/
     musicmation-write.ts      # Rate, album, dramaturgy, rename (4 tools)
     musicmation-projects.ts   # Project CRUD + context mappings (6 tools)
     musicmation-content.ts    # Item create + update (2 tools)
-  services/
-    generation-poller.ts  # Background queue monitor (set-based eviction)
   commands/
     status.ts             # /cynaps3-status auto-reply command
   index.ts                # Plugin entry point + exports
@@ -245,7 +248,6 @@ skills/
 test/
   core/                   # Config, types, errors, pick tests
   tools/                  # Registry, schema validation, handler behavior tests
-  services/               # Poller lifecycle tests
   fixtures/               # Shared mocks (API, config, responses)
   plugin.test.ts          # Integration test
 ```
@@ -264,8 +266,8 @@ test/
 ## Links
 
 - **Homepage**: [cynaps3.io](https://cynaps3.io)
-- **Repository**: [github.com/B-EtterDigital/cynaps3-openclaw-plugin](https://github.com/B-EtterDigital/cynaps3-openclaw-plugin)
-- **Issues**: [github.com/B-EtterDigital/cynaps3-openclaw-plugin/issues](https://github.com/B-EtterDigital/cynaps3-openclaw-plugin/issues)
+- **Repository**: [github.com/B-EtterDigital/Cynaps3-OpenClaw-Plugin](https://github.com/B-EtterDigital/Cynaps3-OpenClaw-Plugin)
+- **Issues**: [github.com/B-EtterDigital/Cynaps3-OpenClaw-Plugin/issues](https://github.com/B-EtterDigital/Cynaps3-OpenClaw-Plugin/issues)
 - **npm**: [@cynaps3/openclaw-plugin](https://www.npmjs.com/package/@cynaps3/openclaw-plugin)
 - **OpenClaw**: [docs.openclaw.ai](https://docs.openclaw.ai)
 

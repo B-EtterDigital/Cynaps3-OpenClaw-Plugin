@@ -36,11 +36,11 @@
     "agent-tools",
     "creative-ai"
   ],
-  "author": "B-EtterDigital <dev@betterdigital.io>",
+  "author": "Better Digital LLC <dev@betterdigital.io>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/B-EtterDigital/cynaps3-openclaw-plugin"
+    "url": "https://github.com/B-EtterDigital/Cynaps3-OpenClaw-Plugin"
   },
   "homepage": "https://cynaps3.io",
   "devDependencies": {
