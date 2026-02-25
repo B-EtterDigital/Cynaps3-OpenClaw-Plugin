@@ -134,14 +134,14 @@ The agent auto-selects the provider based on available API keys and user prefere
 
 ## Modules
 
-| Module | Status | Tools |
-|--------|--------|-------|
-| **musicmation** | Active | 25 tools |
-| storymation | Planned | — |
-| skillmation | Planned | — |
-| contentmation | Planned | — |
+| Module | Status | Description |
+|--------|--------|-------------|
+| **musicmation** | Active (25 tools) | AI music generation, library management, album curation, style browsing, influence groups |
+| **storymation** | Coming soon | Interactive storytelling — branching narratives, character arcs, world-building, voice-acted scenes |
+| **skillmation** | Coming soon | Skill development content — guided learning paths, practice exercises, adaptive difficulty |
+| **contentmation** | Coming soon | Content aggregation and distribution — cross-platform publishing, scheduling, analytics |
 
-Modules register tools only when listed in `enabledModules`. The plugin loads cleanly with no modules enabled (just the `cynaps3_preflight` core tool).
+Modules register tools only when listed in `enabledModules`. The plugin loads cleanly with no modules enabled (just the `cynaps3_preflight` core tool). Each module ships with its own bundled skill playbook.
 
 ---
 
@@ -273,4 +273,4 @@ test/
 
 ## License
 
-[MIT](./LICENSE) — B-EtterDigital
+[MIT](./LICENSE) — Better Digital LLC, registered in New Mexico — Made with Passion
