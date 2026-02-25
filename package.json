@@ -1,0 +1,51 @@
+{
+  "name": "@cynaps3/openclaw-plugin",
+  "version": "1.0.0",
+  "description": "Cynaps3 Creative Suite for OpenClaw — Musicmation, Storymation, Skillmation, Contentmation",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist/",
+    "skills/",
+    "openclaw.plugin.json",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "openclaw": {
+    "extensions": [
+      "./dist/index.js"
+    ]
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "keywords": [
+    "openclaw",
+    "openclaw-plugin",
+    "ai-music",
+    "suno",
+    "cynaps3",
+    "musicmation",
+    "agent-tools",
+    "creative-ai"
+  ],
+  "author": "B-EtterDigital <dev@betterdigital.io>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/B-EtterDigital/cynaps3-openclaw-plugin"
+  },
+  "homepage": "https://cynaps3.io",
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "vitest": "^3.0.0",
+    "@types/node": "^22.0.0"
+  }
+}

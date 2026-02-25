@@ -1,0 +1,87 @@
+{
+  "id": "cynaps3",
+  "name": "Cynaps3 Creative Suite",
+  "version": "1.0.0",
+  "description": "AI-powered creative suite for OpenClaw — music, stories, skills, and content",
+  "homepage": "https://cynaps3.io",
+  "kind": "creative-tools",
+
+  "skills": [
+    "skills/cynaps3-core",
+    "skills/musicmation"
+  ],
+
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "supabaseUrl": {
+        "type": "string",
+        "description": "Supabase project URL"
+      },
+      "supabaseAnonKey": {
+        "type": "string",
+        "description": "Supabase anonymous/public key — safe for client-side use, not a secret"
+      },
+      "serviceRoleKey": {
+        "type": "string",
+        "description": "Service role key for server-to-server auth"
+      },
+      "userId": {
+        "type": "string",
+        "description": "Clerk user ID for auth scoping (X-CLI-User-Id header)"
+      },
+      "contentDomain": {
+        "type": "string",
+        "description": "Base URL for content links (default: https://content.7cycle.life)"
+      },
+      "enabledModules": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "enum": ["musicmation", "storymation", "skillmation", "contentmation"]
+        },
+        "default": ["musicmation"],
+        "description": "Which Cynaps3 modules to activate"
+      },
+      "agentId": {
+        "type": "string",
+        "description": "Optional static override for agent identity. Auto-detected from OpenClaw runtime context; only set this if auto-detection fails."
+      }
+    },
+    "required": ["supabaseUrl", "supabaseAnonKey", "serviceRoleKey", "userId"]
+  },
+
+  "uiHints": {
+    "supabaseUrl": {
+      "label": "Supabase URL",
+      "placeholder": "https://your-project.supabase.co"
+    },
+    "supabaseAnonKey": {
+      "label": "Supabase Public Key",
+      "placeholder": "eyJhbGci...",
+      "sensitive": false,
+      "description": "This is a public key (like an API route prefix) — it is NOT a secret. Supabase anon keys are designed to be client-side visible."
+    },
+    "serviceRoleKey": {
+      "label": "Service Role Key",
+      "placeholder": "eyJhbGci...",
+      "sensitive": true,
+      "description": "Server-side secret for service-role auth to edge functions"
+    },
+    "userId": {
+      "label": "User ID",
+      "placeholder": "user_...",
+      "description": "Clerk user ID used for X-CLI-User-Id auth header"
+    },
+    "contentDomain": {
+      "label": "Content Domain",
+      "placeholder": "https://content.7cycle.life",
+      "description": "Base URL for track detail links. Uses default if omitted."
+    },
+    "enabledModules": {
+      "label": "Enabled Modules",
+      "description": "Select which Cynaps3 creative modules to activate"
+    }
+  }
+}
